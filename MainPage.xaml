@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAnashe.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+    Source="https://cdn-icons-png.flaticon.com/512/295/295128.png"
+    HeightRequest="200"   
+     
+            />
+            <Label
+     Text="Ingresar Usuario"
+     HorizontalOptions="Center"
+     VerticalOptions="Center"
+     FontSize="19"
+     />
+            <Entry
+         
+     Placeholder="Usuario"
+     VerticalOptions="Center"
+     HorizontalOptions="Center"
+     PlaceholderColor="Black"
+      x:Name="EntryUsuarioMain"
+     />
+            <Label
+     Text="Ingresar Contraseña"
+     HorizontalOptions="Center"
+     VerticalOptions="Center"
+     FontSize="19"
+     />
+            <Entry
+     Placeholder="Contraseña"
+     x:Name="EntryContraseñaMain"
+     VerticalOptions="Center"
+     HorizontalOptions="Center"
+     PlaceholderColor="Black"
+     IsPassword="true"
+     />
+            <Button
+     Text="Inciar Sesion"
+     VerticalOptions="Center"
+     HorizontalOptions="Center"
+     Clicked="Ckick_anashe"
+     />
+            <Button
+    Text="Crear Usuario"
+    VerticalOptions="Center"
+    HorizontalOptions="Center"
+    Clicked="CrearUsuario"
+    />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

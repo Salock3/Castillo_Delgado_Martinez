@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAnashe.PaguinaPrincipal"
+             Title="PaginaPrincipal">
+    <ScrollView>
+        <VerticalStackLayout
+      Spacing="25" Padding="30">
+
+            <Image 
+          Source="https://cdn-icons-png.flaticon.com/512/6073/6073873.png"
+          HeightRequest="250"
+          WidthRequest="5000000"
+          />
+            <Border 
+             StrokeThickness="3"
+             StrokeShape="RoundRectangle 12,9,0,40"  
+             Padding="40,2"
+             HorizontalOptions="Center">
+                <Label
+          Text="Nombre de usuario"
+          VerticalOptions="Center"
+          HorizontalOptions="Center"
+          FontSize="19"
+          />
+            </Border>
+            <Entry
+          x:Name="EntryUsuario"
+          Placeholder="Usuario"
+          VerticalOptions="Center"
+          HorizontalOptions="Center"
+          PlaceholderColor="Black"          
+          />
+            <Border 
+              StrokeThickness="3"
+              StrokeShape="RoundRectangle 12,9,0,40"  
+              Padding="40,2"
+              HorizontalOptions="Center">
+                <Label
+              Text="Contraseña"
+              VerticalOptions="Center"
+              HorizontalOptions="Center"
+              FontSize="19"
+              />
+            </Border>
+            <Entry
+              Placeholder="Maximo 8 dijitos"
+              x:Name="EntryClave"
+              HorizontalOptions="Center"
+              PlaceholderColor="Black"
+              MaxLength="8"
+              IsPassword="True"
+               />
+            <Border 
+                StrokeThickness="3"
+                StrokeShape="RoundRectangle 12,9,0,40"  
+                Padding="40,2"
+                HorizontalOptions="Center">
+                <Label
+             Text="Rut"
+             VerticalOptions="Center"
+             HorizontalOptions="Center"
+             FontSize="19"
+             />
+            </Border>
+            <Entry
+             Placeholder="Rut"
+             x:Name="EntryRut"
+             HorizontalOptions="Center"
+             PlaceholderColor="Black"
+           />
+            <Border 
+             StrokeThickness="3"
+             StrokeShape="RoundRectangle 12,9,0,40"  
+             Padding="40,2"
+             HorizontalOptions="Center">
+                <Label
+           Text="Apellido Paterno"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           FontSize="19"
+           />
+            </Border>
+            <Entry
+       Placeholder="Apellido Paterno"
+       x:Name="EntryApellidoPaterno"
+       HorizontalOptions="Center"
+       PlaceholderColor="Black"
+      />
+            <Border 
+             StrokeThickness="3"
+             StrokeShape="RoundRectangle 12,9,0,40"  
+             Padding="40,2"
+             HorizontalOptions="Center">
+                <Label
+           Text="Apellido materno"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           FontSize="19"
+           />
+            </Border>
+            <Entry
+       Placeholder="Apellido Materno"
+       x:Name="EntryApellidoMaterno"
+       HorizontalOptions="Center"
+       PlaceholderColor="Black"
+       />
+
+            <Border 
+                 StrokeThickness="3"
+                 StrokeShape="RoundRectangle 12,9,0,40"  
+                 Padding="40,2"
+                 HorizontalOptions="Center">
+                <Label
+                      Text="Fecha Nacimiento"
+                      VerticalOptions="Center"
+                      HorizontalOptions="Center"
+                      FontSize="19" 
+                     />
+            </Border>
+            <StackLayout
+          RadioButtonGroup.GroupName="Nombre"    
+           Orientation="Horizontal"
+           HorizontalOptions="Center">
+
+                <Entry
+       Placeholder="Dia"
+       x:Name="EnntryDia"
+       HorizontalOptions="Center"
+       Keyboard="Numeric"
+       MaxLength="2"
+        PlaceholderColor="black"
+        />
+                <Entry
+       Placeholder="Mes"
+       x:Name="EntryMes"
+       HorizontalOptions="Center"
+       Keyboard="Numeric"
+          MaxLength="2"
+           PlaceholderColor="Black"
+           />
+                <Entry
+         Placeholder="Año"
+         x:Name="EntryAño"
+         HorizontalOptions="Center"
+         Keyboard="Numeric"
+         MaxLength="4"
+         PlaceholderColor="Black"
+         />
+        
+        </StackLayout>
+            <HorizontalStackLayout
+            HorizontalOptions="Center">
+                <Label Text="Sexo"/>
+                <RadioButton Content="Femenino" x:Name="BotonFemenino"/>
+                <RadioButton Content="Masculino" x:Name="BotonMasculino" IsChecked="True"/>
+            </HorizontalStackLayout>
+
+           
+                <Button
+                Clicked="Mostrar_usuario"
+                Text="Mostrar Usuario"
+                HorizontalOptions="Center"
+                />
+
+            <Button
+            x:Name="GuardarUsuario"
+            Clicked="Cliked_Usuario"
+            Text="Ingresar"
+            HorizontalOptions="Center"
+            />
+            <Button
+                Clicked="cli"
+                Text="waza"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

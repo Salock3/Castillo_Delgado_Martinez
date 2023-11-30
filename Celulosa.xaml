@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAnashe.CrearUsuari1"
+             Title="PagínaPrincipal">
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="25"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+
+            <Label
+        Text="Bienvenido"
+        HorizontalOptions="CenterAndExpand"
+        FontSize="50"
+            />
+            
+            <Label
+                Text="¿Que decea hacer?"
+                HorizontalOptions="CenterAndExpand"
+                FontSize="20"
+                />
+            <Image
+              Source="https://usagif.com/wp-content/uploads/gif/thinking-emoji-21.gif"
+              IsAnimationPlaying="True"
+              HeightRequest="90"
+              WidthRequest="5000000"
+             />
+            <Button
+                x:Name="Almacenar"
+                Text="Almacenar Inventario"
+                Clicked="Almacenar_bienAnashe"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+            <Button
+                x:Name="Buscar"
+                Text="Buscar Producto"
+                Clicked="Buscar_BienAnashe"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

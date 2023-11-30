@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProyectoAnashe.Almacenimiento"
+             Title="Almacenimiento">
+    <VerticalStackLayout>
+        <Image
+            />
+        <Label 
+            Text="Almacenimeinto"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label Text="Ingrese Precio Del valor"
+               FontSize="18"
+              VerticalOptions="Start"
+            />
+        <Entry
+          Placeholder="Precio"
+          x:Name="PrecioProducto"
+          TextColor="Black"/>
+        <Label Text="Ingrese  idProducto"
+       FontSize="18"
+      VerticalOptions="Start"/>
+        <Entry
+      Placeholder="idProducto"
+      x:Name="idProd"
+      TextColor="Black"/>
+        <Label Text="Ingrese nombre producto"
+       FontSize="18"
+      VerticalOptions="Start"/>
+        <Entry 
+           Placeholder="Nombre Producto"
+           x:Name="NombreProduct"
+           TextColor="Black"/>
+        <Label
+            Text="Ingrese cantidad producto"
+            FontSize="18"
+            VerticalOptions="Start"
+            />
+        <Entry
+            Placeholder="Cantidad"
+            x:Name="CantidadProducto"
+            TextColor="Black"
+            />
+        
+        <Button
+            Text="Ingresar"
+            Clicked="Agregar"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            />
+        
+        <Label
+            Text="Ingrese el id del producto para buscar sus elementos"
+            HorizontalOptions="Start"
+            FontSize="18"
+            />
+          <Entry
+             Placeholder="Buscar"
+             x:Name="Id"
+             TextColor="Black"
+            />
+        <Button
+    Clicked="ingresar"
+    Text="Buscar producto"
+    HorizontalOptions="Center"
+    VerticalOptions="Center"
+    />
+    </VerticalStackLayout>
+</ContentPage>
